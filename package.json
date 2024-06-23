@@ -1,0 +1,14 @@
+{
+  "name": "cloudflare-pages-auth",
+  "version": "1.0.0",
+  "description": "Cloudflare Worker to apply cookie based auth to Cloudflare Pages",
+  "author": "Chris Frazier",
+  "private": true,
+  "license": "Unlicense",
+  "scripts": {
+    "preinstall": "npx only-allow yarn",
+    "start": "npx http-server src"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
