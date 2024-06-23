@@ -4,6 +4,11 @@ import { getTemplate } from '../lib/template';
 export async function onRequest({ request, next, env }) {
   const { pathname, searchParams } = new URL(request.url);
 
+  // check for secret
+  if (!env.PASSWORD) {
+    return new Response('Secret not set', { status: 500 });
+  }
+
   // allow form submission to /auth
   if (pathname === '/auth' && request.method === 'POST') {
     return next();

@@ -10,8 +10,8 @@
     "start": "npx http-server src",
     "start:example": "wrangler pages dev example"
   },
-  "dependencies": {},
   "devDependencies": {
     "wrangler": "^3.61.0"
-  }
+  },
+  "packageManager": "yarn@4.3.1"
 }
