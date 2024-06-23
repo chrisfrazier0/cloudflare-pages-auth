@@ -16,6 +16,9 @@ lerna-debug.log*
 /dist
 /build
 
+# wrangler
+.wrangler/
+
 # OS
 .DS_Store
 
