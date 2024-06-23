@@ -8,7 +8,8 @@
   "scripts": {
     "preinstall": "npx only-allow yarn",
     "start": "npx http-server src",
-    "start:example": "wrangler pages dev example"
+    "start:example": "wrangler pages dev example",
+    "deply": "npx wrangler pages deploy example"
   },
   "devDependencies": {
     "wrangler": "^3.61.0"
